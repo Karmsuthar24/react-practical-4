@@ -1,51 +1,8 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Inter, system-ui, sans-serif;
-}
-
-.color-page {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px;
-  background: #17132f;
-  transition: background-color 0.3s ease;
-}
-
-.card {
-  width: min(560px, 100%);
-  padding: 40px;
-  border-radius: 24px;
-  background: rgba(20, 25, 48, 0.92);
-  color: #eeeaff;
-  border: 1px solid #6256a044;
-  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.45);
-}
-
-.card h1 {
-  margin: 0 0 12px;
-  font-size: clamp(2rem, 6vw, 3.5rem);
-  line-height: 1;
-}
-
-.card p {
-  color: #9ca6c5;
-  line-height: 1.6;
-}
-
-.card input[type="color"] {
-  width: 130px;
-  height: 130px;
-  display: block;
-  margin: 25px 0;
-  padding: 0;
-  border: 8px solid #ffffff12;
-  border-radius: 20px;
-  background: transparent;
-  cursor: pointer;
-}
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap");
+*{box-sizing:border-box}body{margin:0;font-family:"Space Grotesk",system-ui,sans-serif;background:#05000f;color:#f5f3ff}
+.color-page{min-height:100vh;display:grid;place-items:center;padding:24px;position:relative;overflow:hidden;transition:background-color .25s}
+.color-page:before{content:"";position:absolute;width:500px;height:500px;border-radius:50%;border:1px solid #22d3ee;box-shadow:0 0 0 60px rgba(34,211,238,.05),0 0 0 120px rgba(217,70,239,.04),0 0 90px rgba(34,211,238,.2)}
+.card{position:relative;z-index:1;width:min(570px,100%);padding:45px 32px;text-align:center;border:1px solid #22d3ee;border-radius:20px;background:rgba(5,0,15,.78);box-shadow:0 0 25px rgba(34,211,238,.2);backdrop-filter:blur(10px)}
+.card h1{margin:0;color:#fff;font-size:clamp(2.3rem,6vw,3.5rem);text-shadow:0 0 12px #d946ef}.card p{color:#a5f3fc;line-height:1.7}
+input[type=color]{width:170px;height:170px;padding:8px;margin:22px;border:2px solid #22d3ee;border-radius:50%;background:#05000f;box-shadow:0 0 20px rgba(34,211,238,.3),0 0 45px rgba(217,70,239,.12);cursor:pointer;transition:.25s}
+input[type=color]:hover{transform:scale(1.06);box-shadow:0 0 35px rgba(34,211,238,.45)}
